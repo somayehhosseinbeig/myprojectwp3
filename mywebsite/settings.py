@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website.apps.WebsiteConfig',# 'website'
-    'hello' # 'hello.apps.HelloConfig'
+    'hello', # 'hello.apps.HelloConfig'
+    'newyear.apps.NewyearConfig', #newyear
 ]
 
 MIDDLEWARE = [
@@ -52,11 +53,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mywebsite.urls'
-
+import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS':[BASE_DIR/'templates'],
+        # [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
