@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'website.apps.WebsiteConfig',# 'website'
     'hello', # 'hello.apps.HelloConfig'
     'newyear.apps.NewyearConfig', #newyear
+    'tasks'
 ]
 
 MIDDLEWARE = [
